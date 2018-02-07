@@ -5,10 +5,31 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/footerstyle.css">
+    <link rel="stylesheet" href="css/recipealbum.css">
 </head>
 <body>
 
 <div th:replace="menu :: navbar"></div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="photo-album">
+    <h1><span>International Recipes</span></h1>
+    <a  th:href="@{/GulabJamun}" class="large polaroid img1"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg" class="card-media" alt="">India</a>
+    <a th:href="@{/Croquemadame}" class="small polaroid img3"><img src="http://www.snap-shot.com/wallpapers/wallpaper/flag_france.jpg" class="card-media" alt="">France</a>
+    <a th:href="@{/CrabCake}" class="medium polaroid img4"><img src="http://www.usaflagsupply.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/2/0/20star_1.gif" class="card-media" alt="">America</a>
+    <a th:href="@{/Bara}" class="large polaroid img5"><img src="https://www.wholeplanetfoundation.org/wp-content/uploads/2014/01/Nepal-Flag.jpg" class="card-media" alt="">Nepal</a>
+    <a th:href="@{/JerkChicken}" class="polaroid img6"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/2000px-Flag_of_Jamaica.svg.png" class="card-media" alt="">Jamaica</a>
+    <a th:href="@{/Wings}"  class="polaroid img7"><img src="http://www.china-family-adventure.com/image-files/china-flag.jpg" class="card-media" alt="">China</a>
+    <a th:href="@{/Injera}" class="medium polaroid img6"><img class="simg" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Ethiopia_%281975%E2%80%931987%29.svg" alt="">Ethiopia</a>
+    <a th:href="@{/PumpkinRice}" class="large polaroid img8"><img class="simg"src="http://flagpedia.net/data/flags/ultra/tw.png" class="card-media" alt="">Taiwan</a>
+</div>
+</div>
+</div>
+
+
+
+
 
 <div th:replace="menu :: footer"></div>
 
