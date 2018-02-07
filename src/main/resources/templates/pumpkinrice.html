@@ -1,44 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Pumpkin Rice</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/recipecard.css"/>
+    <link rel="stylesheet" href="css/footerstyle.css">
 </head>
 <body>
-<div class="row">
-    <!--Nav Bar Information Collaspe-->
-    <nav class="navbar navbar-default" >
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="main.html">RecipeBook</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="wings.html">Wings</a></li>
-                <li><a href="makroudh.html">Makhrouds</a></li>
-                <li><a href="eggsauce.html">Egg Sauce</a></li>
-                <li><a href="injera.html">Injera</a></li>
-                <li><a href="gulabjamun.html">Gulab Jamun</a></li>
-                <li><a href="crabcake.html">Crabcake</a></li>
-                <li><a href="jerkchicken.html">Jerk Chicken</a></li>
-                <li><a href="croquemadame.html">Croque Madame</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="menu.html">Menu</a></li>
-
-            </ul>
-        </div>
-    </nav>
-</div>
-<!--End of Nav Bar Row-->
-
+<div th:replace="menu :: navbar"></div>
 
 <!--Flag Info-->
 <div class=row>
@@ -97,6 +67,7 @@
 </div>
 <!--End of Recipie Info-->
 
+<div th:replace="menu :: footer"></div>
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
