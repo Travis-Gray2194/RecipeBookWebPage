@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Recipe Book</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <!-- This is embedded stylesheet. -->
+    <!-- adding fonts to website to make it more attractive. Use google fonts by refrencing the css on the Google Fonts APIs CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="css/recipebookstyle.css">
+    <link rel="stylesheet" href="css/footerstyle.css">
+</head>
+<body>
+<div th:replace="menu :: navbar"></div>
+
+    <div id="products" class="row list-group">
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://www.chinasichuanfood.com/wp-content/uploads/2013/12/Red-cooked-chicken-wingsth.jpg" alt="this is a chicken wing" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">Sichuan Chicken Wings</h4>
+                    <p class="group inner list-group-item-text">
+                        China</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                Serves 6</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/Wings}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://i52.tinypic.com/zkhic6.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">Makhrouds</h4>
+                    <p class="group inner list-group-item-text">Algeria and Tunisia</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">Serves 8</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/Makroudh}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://afrifitness.com/wp-content/uploads/2016/08/nigerian-egg-stew-1.jpg" alt="egg sauce" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">Egg Sauce</h4>
+                    <p class="group inner list-group-item-text">
+                        Nigeria</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">Serves 2</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/EggSauce}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Injera.jpg" alt="injera" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">Injera</h4>
+                    <p class="group inner list-group-item-text">Ethiopia</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">Serves 6</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/Injera}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://cdn.indiamarks.com/wp-content/uploads/gulab-jamun.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Gulab Jamun</h4>
+                    <p class="group inner list-group-item-text">India</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">Serves 4</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/GulabJamun}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://c1.staticflickr.com/5/4154/4976761276_7edb1bfeb7_b.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Crabcake</h4>
+                    <p class="group inner list-group-item-text">America</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">Serves 4</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/CrabCake}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://www.royalmt.com.np/blog/wp-content/uploads/sites/2/2014/05/egg-bara-newari-food.jpg" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">Bara</h4>
+                    <p class="group inner list-group-item-text">
+                        Taiwan</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                Serves 6</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/Bara}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://crankingkitchen.files.wordpress.com/2011/05/finished.jpg" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">Jerk Chicken</h4>
+                    <p class="group inner list-group-item-text">Jamaica</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">Serves 8</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/JerkChicken}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://www.droolius.com/wp-content/uploads/2011/09/Croque_Madame_Le_Cafe_De_Paris_Droolius_1.jpg" alt="egg sauce" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">Croque Madame</h4>
+                    <p class="group inner list-group-item-text">
+                        France</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">Serves 2</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/Croquemadame}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="https://rasamalaysia.com/wp-content/uploads/2011/10/pumpkin_noodles2.jpg"  />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">Pumpkin Rice</h4>
+                    <p class="group inner list-group-item-text">
+                        Nepal</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">Serves 2</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" th:href="@{/PumpkinRice}">GET THE RECIPE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div th:replace="menu :: footer"></div>
+
+</body>
+</html>

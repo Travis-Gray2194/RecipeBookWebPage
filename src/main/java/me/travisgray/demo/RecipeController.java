@@ -55,7 +55,7 @@ public class RecipeController {
 
     @RequestMapping("/Gallery")
     public String showGallery(){
-        return "gallery";
+        return "gallery1";
     }
 
     @RequestMapping("/Wings")
@@ -68,5 +68,9 @@ public class RecipeController {
         return "bara";
     }
 
+    @RequestMapping("/ShowFlagGallery")
+    public String showFlag(){
+        return "flaggallery";
+    }
 
 }
